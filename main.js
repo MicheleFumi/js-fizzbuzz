@@ -19,13 +19,13 @@ proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro program
  // devo ricordarmi che i multipli di 3 e 5 devono stampare fizzbuzz
 //FASE 4
 for (let i = 1; i <= 100 ; i++) {
-        if (i / 3){
+        if (Math.floor(i / 3)){
             console.log('Fizz');
             
-        } else if (i / 3){
+        } else if (Math.floor(i / 5)){
             console.log('Buzz');
             
-        } else if (i / 5 && i / 3) {
+        } else if (Math.floor(i / 5 && i / 3)) {
             console.log('FizzBuzz');
             
         } else {
