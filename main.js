@@ -11,24 +11,28 @@ proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro program
  */
 
 //FASE 1 
-// so che devo stampare numeri da 1 a 100 quindi uso for
+// so che devo loggare numeri da 1 a 100 quindi uso for
     
 //FASE 2
-// so che i multipli di 3 stampano fizz al posto dei numeri e i multipli di 5 buzz utilizzando la funzione 
-// math.floor per far sì che usi SOLO i numeri divisibili NATURALMENTE per 3 e non decimali
+// uso l'if per creare le condizioni dove viene loggato fizzbuzz solo per multipli di 3 E di 5 
+// usando l'operatore % x ===0 per assicurarmi che prenda i multipli naturali soltanto.
+
 //FASE 3
- // devo stampare in modo che i multipli di 3 e 5 devono stampare fizzbuzz
+// loggo la condizione dove se è solo multiplo di 3 esce in console fizz
 //FASE 4
+//loggo la condizione dove se è solo multiplo di 5 esce in console buzz
+
 for (let i = 1; i <= 100 ; i++) {
-    if (i % 3 === 0){
+    if ((i % 3 === 0 ) && (i % 5 === 0)) {
+        console.log('FizzBuzz');
+
+    } else if  (i % 3 === 0){
         console.log('Fizz');
-        
+          
     } else if (i % 5 === 0){
         console.log('Buzz');
         
-    } else if ((i % 3 === 0 ) && (i % 5 === 0)) {
-        console.log('FizzBuzz');
-        
+    
     } else {
         console.log(i);
         
